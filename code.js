@@ -10,6 +10,7 @@ function setBot(){
       var readMsg = msg.item(i).textContent+msg.item(i+1).textContent;
       if(readMsg == gm+": &check;"){
         console.log("itsOk");
+      }
       if(readMsg.indexOf(gm+": &kick;") != -1){
         var banstr = gm.length+8;
         var userBn = readMsg.slice(banstr);
