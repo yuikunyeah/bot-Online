@@ -1,4 +1,5 @@
 clearInterval(setBot());
+var scr = document.creatElement("script");
 var msg = document.getElementsByTagName("span");
 console.log("開始");var msgL = msg.length; 
 var gm = prompt("gm") ;
@@ -9,7 +10,7 @@ function setBot(){
     for(let i = 0;i<count;i = i+2){
       var readMsg = msg.item(i).textContent+msg.item(i+1).textContent;
       if(readMsg == gm+": &check;"){
-        alert("botは正常に稼働しています");
+        scr.src="https://zinro.net/m/api/?mode=post_message&to_user=ALL&message=bot:botは正常に稼働しています";
       }
       if(readMsg.indexOf(gm+": &kick;") != -1){
         var banstr = gm.length+8;
