@@ -1,8 +1,8 @@
 clearInterval(setBot());
-var scr = document.creatElement("script");
 var msg = document.getElementsByTagName("span");
 console.log("開始");var msgL = msg.length; 
-var gm = prompt("gm") ;
+var gm = prompt("gm");
+var scr = document.createElement("script");
 function setBot(){
   setInterval(function(){
     var count = msg.length-msgL;
