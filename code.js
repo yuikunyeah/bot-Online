@@ -12,7 +12,7 @@ function setBot(){
       if(readMsg == gm+": &check;"){ 
         talk("YMH:botは正常に稼働しています","ALL");    
       }      
-      if(readMsg.indexOf(gm+": あばよ、") != -1){   
+      if(readMsg.indexOf(gm+": さよなら、") != -1){   
         var banstr = gm.length+6;    
         var userBn = readMsg.substring(banstr); 
         console.log(userBn+"をban");       
