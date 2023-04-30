@@ -8,7 +8,7 @@ function setBot(){
     var count = msg.length-msgL;   
     msgL = msg.length;    
     for(let i = 0;i<count;i = i+2){  
-      var readMsg = msg.item(i).textContent+msg.item(i+1).textContent;   
+      var readMsg = mあsg.item(i).textContent+msg.item(i+1).textContent;   
       if(readMsg == gm+": &check;"){ 
         talk("YMH:botは正常に稼働しています","ALL");    
       }      
@@ -25,12 +25,10 @@ function setBot(){
     }  
   },3000);
 }
-function 
-talk(url,forU){
+function talk(url,forU){
   fetchO("https://zinro.net/m/player.php?mode=message&to_user="+forU+"&message="+url);
 }
-function
-fetchO(url){
+function fetchO(url){
   fetch(url);
-  fetch("https://zinro.net/m/player.php")
+  fetch("https://zinro.net/m/player.php");
 }
